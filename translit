@@ -1,0 +1,47 @@
+#!/usr/bin/python3
+
+import sys, os, re
+
+if len(sys.argv) < 2:
+  print('Usage: translit src.txt [dest.txt]')
+  sys.exit(1)
+
+def replace_keep_case (text, rule):
+  def f (match):
+    g = match.group()
+    if g.islower(): return rule[1].lower()
+    if g.istitle(): return rule[1].title()
+    if g.isupper(): return rule[1].upper()
+    return rule[1]
+  return re.sub(rule[0], f, text, flags=re.I)
+  
+rules_file = os.path.dirname(os.path.abspath(__file__)) + '/translit_rules'
+with open(rules_file) as f:
+  rule_lines = f.readlines()
+rules = []
+for line in rule_lines:
+  rule_src = line.replace('\n', '').split(' -> ')
+  if len(rule_src) == 2 and rule_src[0].strip() != '' and rule_src[0].strip()[0] != '#':
+    if rule_src[1] == '[]':
+      rules.append([ rule_src[0].strip(), '' ])
+    else:
+      rules.append([ rule_src[0].strip(), rule_src[1].strip() ])
+  
+src_filename = sys.argv[1]
+with open(src_filename) as f:
+  lines = f.readlines()
+  
+output = ''
+
+for line in lines:
+  output_line = line
+  for rule in rules:
+    output_line = replace_keep_case(output_line, rule)
+  output = output + output_line
+  
+if len(sys.argv) < 2:
+  print(output)
+else:
+  with open(sys.argv[2], 'w') as f:
+    f.write(output)
+
