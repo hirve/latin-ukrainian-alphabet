@@ -2,7 +2,7 @@
 The nice Latin transliteration for Ukrainian language.
 
 ### What is this
-The enhanced version of ukrainian to latin transliteration with some beautiful letters like "Ł", "Ś", "Ć", "Ż", "Š" and leaving "ї", "Ґ".
+The enhanced version of Ukrainian to Latin transliteration with some beautiful letters like "Ł", "Ś", "Ć", "Ż", "Š" and leaving "ї", "Ґ".
 
 The text:
 > В лісі щось загомоніло, струмок зашумував, забринів, і вкупі з його водами з лісу вибіг "Той, що греблі рве" — молодий, дуже білявий, синьоокий, з буйними і разом плавкими рухами; одежа на йому міниться барвами, від каламутно-жовтої до ясно-блакитної, і поблискує гострими злотистими іскрами. Кинувшися з потоку в озеро, він починає кружляти по плесі, хвилюючи його сонну воду; туман розбігається, вода синішає.
@@ -20,4 +20,4 @@ becomes:
 The project is tested on just few texts and needs for further tuning by addition of rules.
 
 ### Customize language
-Also you can translate words you like to get your customized language.
+Also you can translate words you like to get your customized language. Open the **translit_rules** file and add your words in the first section under the line ```# Word translation if you want```.
