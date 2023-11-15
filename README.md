@@ -2,7 +2,7 @@
 The nice Latin transliteration for Ukrainian language.
 
 ### What is this
-The enhanced virsion of ukrainian to latin transliteration with some beautiful letters like "Ł", "Ś", "Ć", "Ż", "Š" and leaving "ї", "Ґ".
+The enhanced version of ukrainian to latin transliteration with some beautiful letters like "Ł", "Ś", "Ć", "Ż", "Š" and leaving "ї", "Ґ".
 
 The text:
 > В лісі щось загомоніло, струмок зашумував, забринів, і вкупі з його водами з лісу вибіг "Той, що греблі рве" — молодий, дуже білявий, синьоокий, з буйними і разом плавкими рухами; одежа на йому міниться барвами, від каламутно-жовтої до ясно-блакитної, і поблискує гострими злотистими іскрами. Кинувшися з потоку в озеро, він починає кружляти по плесі, хвилюючи його сонну воду; туман розбігається, вода синішає.
