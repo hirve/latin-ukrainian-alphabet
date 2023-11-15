@@ -1,5 +1,5 @@
 # Latin Ukrainian Alphabet
-Latin Alphabet Transliteration for Ukrainian Language
+The nice Latin transliteration for Ukrainian language.
 
 ### What is this
 The enhanced virsion of ukrainian to latin transliteration with some beautiful letters like "Ł", "Ś", "Ć", "Ż", "Š" and leaving "ї", "Ґ".
