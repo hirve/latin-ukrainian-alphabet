@@ -11,6 +11,11 @@ becomes:
 
 > W lisi śzos zagomoniło, strumok zašumuwaw, zabryniw, i wkupi z jogo wodamy z lisu wybig "Toj, śzo grebli rwe" — mołodyj, duże bilawyj, syniookyj, z bujnymy i razom pławkymy ruhamy; odeża na jomu minytsia barwamy, wid kałamutno-żowtoї do jasno-błakytnoї, i pobłyskuje gostrymy złotystymy iskramy. Kynuwšysia z potoku w ozero, win poćynaje krużlaty po płesi, hwylujućy jogo sonnu wodu; tuman rozbigajetsia, woda synišaje.
 
+### Usage
+```
+./translit src.txt output.txt
+```
+
 ### Disclaimer
 The project is tested on just few texts and needs for further tuning by addition of rules.
 
