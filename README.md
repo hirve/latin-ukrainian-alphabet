@@ -21,3 +21,7 @@ The project is tested on just few texts and needs for further tuning by addition
 
 ### Customize language
 Also you can translate words you like to get your customized language. Open the **translit_rules** file and add your words in the first section under the line ```# Word translation if you want```.
+
+### Thanks
+1. Eastern and Northern European countries for some letters.
+2. https://en.wikipedia.org/wiki/Ukrainian_Latin_alphabet
