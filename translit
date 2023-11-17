@@ -3,7 +3,7 @@
 import sys, os, re
 
 if len(sys.argv) < 2:
-  print('Usage: translit src.txt [dest.txt]')
+  print('Usage: translit src.txt [output.txt]')
   sys.exit(1)
 
 def replace_keep_case (text, rule):

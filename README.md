@@ -13,7 +13,7 @@ becomes:
 
 ### Usage
 ```
-./translit src.txt output.txt
+./translit src.txt [output.txt]
 ```
 
 ### Disclaimer
