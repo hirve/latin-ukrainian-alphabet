@@ -4,6 +4,7 @@ import sys, os, re
 
 if len(sys.argv) < 2:
   print('Usage: translit src.txt [> output.txt]')
+  print('   Or: cat src.txt | translit - [> output.txt]')
   sys.exit(1)
 
 def replace_keep_case (text, rule):
@@ -29,8 +30,12 @@ for line in rule_lines:
       rules.append([ rule_src[0].strip(), rule_src[1].strip() ])
   
 src_filename = sys.argv[1]
-with open(src_filename) as f:
-  lines = f.readlines()
+
+if src_filename == "-":
+  lines = sys.stdin.readlines()
+else:
+  with open(src_filename) as f:
+    lines = f.readlines()
   
 output = ''
 
@@ -41,3 +46,4 @@ for line in lines:
   output = output + output_line
   
 print(output)
+
