@@ -10,6 +10,7 @@ def replace_keep_case (text, rule):
   def f (match):
     g = match.group()
     if g.islower(): return rule[1].lower()
+    if match.string[match.end() - 1 : match.end() + 1].isupper(): return rule[1].upper()
     if g.istitle(): return rule[1].title()
     if g.isupper(): return rule[1].upper()
     return rule[1]
