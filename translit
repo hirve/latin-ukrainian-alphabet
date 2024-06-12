@@ -7,11 +7,17 @@ if len(sys.argv) < 2:
   print('   Or: cat src.txt | translit - [> output.txt]')
   sys.exit(1)
 
+def remove_uppercase (text):
+  def f (match):
+    g = match.group()
+    if g.isupper(): return g.title()
+    return g
+  return re.sub("\w+", f, text, flags=re.I)
+
 def replace_keep_case (text, rule):
   def f (match):
     g = match.group()
     if g.islower(): return rule[1].lower()
-    if match.string[match.end() - 1 : match.end() + 1].isupper(): return rule[1].upper()
     if g.istitle(): return rule[1].title()
     if g.isupper(): return rule[1].upper()
     return rule[1]
@@ -40,7 +46,7 @@ else:
 output = ''
 
 for line in lines:
-  output_line = line
+  output_line = remove_uppercase(line)
   for rule in rules:
     output_line = replace_keep_case(output_line, rule)
   output = output + output_line
