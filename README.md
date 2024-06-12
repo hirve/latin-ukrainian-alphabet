@@ -18,6 +18,7 @@ becomes:
 
 ### Disclaimer
 The project is tested on just few texts and needs for further tuning by addition of rules.
+The current version will conflict with uppercase words like abbreviations.
 
 ### Customize language
 Also you can translate words you like to get your customized language. Open the **translit_rules** file and add your words in the first section under the line ```# Word translation if you want```.
